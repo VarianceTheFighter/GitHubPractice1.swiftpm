@@ -7,9 +7,11 @@ struct ContentView: View {
     var body: some View {
         TextField("Textfield", value: $number2, format: .number)
             .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            .font(.largeTitle)
         
         TextField("yo", value: $number1, format: .number)
             .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            .font(.largeTitle)
         
         Button(action: {
             
