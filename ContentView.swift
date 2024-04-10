@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @State var number1 = 0
     @State var number2 = 0
-    @State var answer = "Answer is "
+    @State var answer = 0
     var body: some View {
         TextField("Textfield", value: $number2, format: .number)
         
@@ -13,7 +13,15 @@ struct ContentView: View {
             answer = number1 + number2
             
         }, label: {
+            Rectangle()
+                .frame(maxWidth: 100, maxHeight: 100)
+                .foregroundStyle(.blue)
+                .overlay(
             Text("Add")
+                .foregroundStyle(.mint))
+                
+                    
+                
         })
         
         Text("\(answer)")
