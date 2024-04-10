@@ -18,8 +18,15 @@ struct ContentView: View {
             answer = number1 + number2
             
         }, label: {
-            Text("Add")
+            Rectangle()
+                .frame(maxWidth: 100, maxHeight: 100)
                 .foregroundStyle(.blue)
+                .overlay(
+            Text("Add")
+                .foregroundStyle(.mint))
+                
+                    
+                
         })
         
         Text("\(answer)")
